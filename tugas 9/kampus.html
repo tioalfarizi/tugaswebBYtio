@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universitas Bundaran Citra</title>
+
+<style>
+
+html{
+    scroll-behavior:smooth;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f6fa;
+}
+
+/* NAVBAR */
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(0,0,0,.85);
+    backdrop-filter:blur(10px);
+    padding:15px;
+    z-index:1000;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav ul li{
+    margin:10px 20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:#00bfff;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(
+    rgba(0,0,0,.6),
+    rgba(0,0,0,.6)),
+    url("https://images.unsplash.com/photo-1562774053-701939374585");
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-top:15px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:15px 35px;
+    background:#007bff;
+    color:white;
+    border-radius:50px;
+    text-decoration:none;
+}
+
+.btn:hover{
+    background:#0056d2;
+}
+
+/* SECTION */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:80px 0;
+}
+
+.title{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:40px;
+    color:#003366;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card a{
+    text-decoration:none;
+    color:black;
+    display:block;
+}
+
+.number{
+    font-size:40px;
+    color:#007bff;
+    font-weight:bold;
+    text-align:center;
+}
+
+/* FORM */
+
+form{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+input, select{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    margin-bottom:15px;
+}
+
+button{
+    padding:12px 25px;
+    background:#007bff;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056d2;
+}
+
+/* FOOTER */
+
+footer{
+    background:#001f3f;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+footer a{
+    color:#00bfff;
+    text-decoration:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+<ul>
+<li><a href="#beranda">Beranda</a></li>
+<li><a href="#tentang">Tentang</a></li>
+<li><a href="#statistik">Statistik</a></li>
+<li><a href="#prodi">Program Studi</a></li>
+<li><a href="#fasilitas">Fasilitas</a></li>
+<li><a href="#pendaftaran">Pendaftaran</a></li>
+<li><a href="#kontak">Kontak</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero" id="beranda">
+
+<div>
+
+<h1>Universitas Bundaran Citra</h1>
+
+<p>
+Mencetak Generasi Unggul, Inovatif dan Berdaya Saing Global
+</p>
+
+<a href="#pendaftaran" class="btn">
+Daftar Sekarang
+</a>
+
+</div>
+
+</section>
+
+<!-- TENTANG -->
+
+<section id="tentang" class="container">
+
+<h2 class="title">Tentang Kampus</h2>
+
+<div class="card">
+
+<p>
+Universitas Bundaran Citra merupakan salah satu perguruan tinggi
+swasta unggulan di Indonesia yang berkomitmen menghasilkan
+lulusan berkualitas melalui pendidikan, penelitian,
+dan pengabdian kepada masyarakat.
+</p>
+
+</div>
+
+</section>
+
+<!-- STATISTIK -->
+
+<section id="statistik" class="container">
+
+<h2 class="title">Statistik Kampus</h2>
+
+<div class="grid">
+
+<div class="card">
+<div class="number">20+</div>
+<p align="center">Program Studi</p>
+</div>
+
+<div class="card">
+<div class="number">15.000+</div>
+<p align="center">Mahasiswa Aktif</p>
+</div>
+
+<div class="card">
+<div class="number">500+</div>
+<p align="center">Dosen Profesional</p>
+</div>
+
+<div class="card">
+<div class="number">30+</div>
+<p align="center">Tahun Berdiri</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PROGRAM STUDI -->
+
+<section id="prodi" class="container">
+
+<h2 class="title">Program Studi Unggulan</h2>
+
+<div class="grid">
+
+<div class="card">
+<a href="https://fasilkom.bundarancitra.ac.id" target="_blank">
+<h3>Teknik Informatika</h3>
+<p>Belajar AI, pemrograman, jaringan, dan software engineering.</p>
+</a>
+</div>
+
+<div class="card">
+<a href="https://www.bundarancitra.ac.id" target="_blank">
+<h3>Sistem Informasi</h3>
+<p>Menggabungkan teknologi dan kebutuhan bisnis modern.</p>
+</a>
+</div>
+
+<div class="card">
+<a href="https://www.bundarancitra.ac.id" target="_blank">
+<h3>Manajemen</h3>
+<p>Mempersiapkan lulusan profesional di bidang bisnis.</p>
+</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- FASILITAS -->
+
+<section id="fasilitas" class="container">
+
+<h2 class="title">Fasilitas Kampus</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>💻 Laboratorium Komputer</h3>
+<p>Perangkat modern untuk praktikum mahasiswa.</p>
+</div>
+
+<div class="card">
+<h3>📚 Perpustakaan Digital</h3>
+<p>Akses ribuan jurnal dan buku elektronik.</p>
+</div>
+
+<div class="card">
+<h3>📶 WiFi Area</h3>
+<p>Koneksi internet cepat di seluruh area kampus.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PENDAFTARAN -->
+
+<section id="pendaftaran" class="container">
+
+<h2 class="title">Form Pendaftaran</h2>
+
+<form>
+
+<label>Nama Lengkap</label>
+<input type="text">
+
+<label>Email</label>
+<input type="email">
+
+<label>Program Studi</label>
+
+<select>
+<option>Teknik Informatika</option>
+<option>Sistem Informasi</option>
+<option>Manajemen</option>
+</select>
+
+<button type="submit">
+Kirim
+</button>
+
+</form>
+
+</section>
+
+<!-- KONTAK -->
+
+<section id="kontak" class="container">
+
+<h2 class="title">Kontak Kampus</h2>
+
+<div class="card">
+
+<p>
+📞
+<a href="tel:+62215674223">
+(021) 5674223
+</a>
+</p>
+
+<br>
+
+<p>
+✉
+<a href="mailto:info@bundarancitra.ac.id">
+info@esaunggul.ac.id
+</a>
+</p>
+
+<br>
+
+<p>
+🌐
+<a href="https://www.bundarancitra.ac.id" target="_blank">
+www.esaunggul.ac.id
+</a>
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Universitas Bundaran Citra
+</p>
+
+</footer>
+
+</body>
+</html>

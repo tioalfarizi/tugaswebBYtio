@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kopi Kenangan HTS</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f8f8f8;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,.85);
+padding:18px;
+z-index:1000;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:70px;
+}
+
+.hero p{
+font-size:22px;
+margin:20px 0;
+}
+
+.btn{
+background:#c68b59;
+padding:15px 35px;
+border-radius:30px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+/* SECTION */
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+padding:80px 0;
+}
+
+.title{
+text-align:center;
+font-size:42px;
+margin-bottom:40px;
+color:#5c4033;
+}
+
+/* ABOUT */
+
+.about{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+line-height:1.8;
+}
+
+/* STATS */
+
+.stats{
+background:#3b2f2f;
+color:white;
+padding:70px 20px;
+display:flex;
+justify-content:center;
+gap:80px;
+flex-wrap:wrap;
+}
+
+.stat{
+text-align:center;
+}
+
+.stat h2{
+font-size:50px;
+}
+
+/* PRODUK */
+
+.produk{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.harga{
+font-size:24px;
+font-weight:bold;
+color:#c68b59;
+margin-top:10px;
+}
+
+button{
+width:100%;
+padding:12px;
+margin-top:15px;
+border:none;
+background:#c68b59;
+color:white;
+font-weight:bold;
+border-radius:10px;
+cursor:pointer;
+}
+
+/* KEUNGGULAN */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.box{
+background:white;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+/* TESTIMONI */
+
+.testi{
+background:#3b2f2f;
+color:white;
+padding:40px;
+border-radius:15px;
+text-align:center;
+}
+
+/* KONTAK */
+
+.kontak{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+line-height:2;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<ul>
+<li><a href="#tentang">Tentang</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#keunggulan">Keunggulan</a></li>
+<li><a href="#kontak">Kontak</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div>
+
+<h1>Kopi Kenangan HTS</h1>
+
+<p>
+Setiap tegukan menyimpan cerita.
+</p>
+
+<a href="#menu" class="btn">
+Lihat Menu
+</a>
+
+</div>
+
+</section>
+
+<section id="tentang" class="container">
+
+<h2 class="title">Tentang Kami</h2>
+
+<div class="about">
+
+<p>
+Kopi Kenangan HTS adalah UMKM yang bergerak di bidang minuman kopi modern.
+Kami menyajikan berbagai menu kopi dan non-kopi dengan bahan berkualitas,
+harga terjangkau, dan cita rasa yang cocok untuk semua kalangan.
+</p>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="stat">
+<h2>10K+</h2>
+<p>Pelanggan</p>
+</div>
+
+<div class="stat">
+<h2>25+</h2>
+<p>Varian Menu</p>
+</div>
+
+<div class="stat">
+<h2>4.9★</h2>
+<p>Rating</p>
+</div>
+
+</section>
+
+<section id="menu" class="container">
+
+<h2 class="title">Menu Favorit</h2>
+
+<div class="produk">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c">
+
+<div class="card-content">
+
+<h3>☕ Es Kopi HTS Signature</h3>
+
+<p>Espresso premium dengan susu creamy.</p>
+
+<div class="harga">Rp 25.000</div>
+
+<button>Pesan Sekarang</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
+
+<div class="card-content">
+
+<h3>🥤 Caramel Latte</h3>
+
+<p>Perpaduan kopi dan karamel pilihan.</p>
+
+<div class="harga">Rp 30.000</div>
+
+<button>Pesan Sekarang</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1551024709-8f23befc6cf7">
+
+<div class="card-content">
+
+<h3>🍰 Croffle Cheese</h3>
+
+<p>Camilan favorit untuk teman ngopi.</p>
+
+<div class="harga">Rp 20.000</div>
+
+<button>Pesan Sekarang</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="keunggulan" class="container">
+
+<h2 class="title">Keunggulan Kami</h2>
+
+<div class="grid">
+
+<div class="box">
+<h3>☕ Biji Kopi Pilihan</h3>
+<p>Kualitas terbaik dari petani lokal.</p>
+</div>
+
+<div class="box">
+<h3>🚚 Pengiriman Cepat</h3>
+<p>Melayani pemesanan setiap hari.</p>
+</div>
+
+<div class="box">
+<h3>⭐ Rasa Premium</h3>
+<p>Disukai ribuan pelanggan.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="container">
+
+<h2 class="title">Testimoni</h2>
+
+<div class="testi">
+
+<p>
+"Tempat nyaman, kopi enak, harga ramah kantong. Recommended!"
+</p>
+
+<br>
+
+<b>- Tio Al Farizi</b>
+
+</div>
+
+</section>
+
+<section id="kontak" class="container">
+
+<h2 class="title">Kontak Kami</h2>
+
+<div class="kontak">
+
+<p>📍 Pasar Kemis, Tangerang</p>
+<p>📞 0812-3456-7890</p>
+<p>📧 kopikenanganhts@gmail.com</p>
+<p>🕘 Buka Setiap Hari 08.00 - 22.00</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Kopi Kenangan HTS</p>
+
+</footer>
+
+</body>
+</html>
