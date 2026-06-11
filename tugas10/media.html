@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f4f6f9;
+}
+
+/* HEADER */
+
+header{
+background:linear-gradient(135deg,#2563eb,#1e3a8a);
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+header h1{
+font-size:50px;
+}
+
+header p{
+margin-top:10px;
+font-size:18px;
+}
+
+/* CARD */
+
+.container{
+max-width:1200px;
+margin:40px auto;
+display:flex;
+gap:20px;
+padding:20px;
+}
+
+.card{
+flex:1;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h2{
+margin-bottom:15px;
+color:#2563eb;
+}
+
+.card button{
+margin-top:15px;
+padding:10px 20px;
+border:none;
+background:#2563eb;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+
+.card button:hover{
+background:#1e40af;
+}
+
+/* FOOTER */
+
+footer{
+background:#111827;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.container{
+flex-direction:column;
+}
+
+header h1{
+font-size:35px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>Tio Al Farizi</h1>
+
+<p>Mahasiswa Teknik Informatika</p>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>HTML</h2>
+
+<p>
+Membuat struktur website modern dan responsif.
+</p>
+
+<button onclick="alert('Belajar HTML')">
+Lihat Detail
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>CSS</h2>
+
+<p>
+Mengatur tampilan website agar menarik dan profesional.
+</p>
+
+<button onclick="alert('Belajar CSS')">
+Lihat Detail
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>JavaScript</h2>
+
+<p>
+Menambahkan interaksi dan fitur dinamis pada website.
+</p>
+
+<button onclick="alert('Belajar JavaScript')">
+Lihat Detail
+</button>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 Portfolio Tio Al Farizi
+
+</footer>
+
+</body>
+</html>
